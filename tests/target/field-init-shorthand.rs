@@ -3,16 +3,16 @@
 
 #![feature(field_init_shorthand)]
 
-struct AA{}
-struct BB{}
+struct AA {}
+struct BB {}
 
 struct CC {
     a: AA,
-    b: BB
+    b: BB,
 }
 
 impl CC {
     fn new(a: AA, b: BB) -> Self {
-        Self { a, b }
+        Self { a: a, b: b }
     }
 }
